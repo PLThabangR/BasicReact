@@ -19,7 +19,7 @@ const Background = () => {
 
   return (
     <>
-    <div>{darkModeOn ? blue : black}</div>
+    <div >{darkModeOn ? blue : black}</div>
    <button onClick ={HandleChange }>Chnage color</button>
     
     </>
