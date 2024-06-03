@@ -4,11 +4,11 @@ const Background = () => {
     let darkModeOn = true
     //Array destruciong syntax
     const [chnageColor,setColor] =useState(false)
-    const blue = <h1>Blue mode is on</h1>
-    const black = <h1>Dark mode is on</h1>
+     
 
     const HandleChange = () =>{
-         darkModeOn = !darkModeOn
+        darkModeOn =!darkModeOn
+         setColor(darkModeOn)
          if(darkModeOn ==true){
           console.log("background color is blue")
          }else{
@@ -19,7 +19,8 @@ const Background = () => {
 
   return (
     <>
-    <div>{darkModeOn ? blue : black}</div>
+    <div >{chnageColor ?  <h1>Blue mode is on</h1> : <h1>Dark mode is on</h1> }</div>
+    {true && 5}
    <button onClick ={HandleChange }>Chnage color</button>
     
     </>
